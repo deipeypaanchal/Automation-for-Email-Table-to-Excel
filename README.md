@@ -1,1 +1,1 @@
-# Automation-for-Email-Table-to-Excel
+# Automation Project to extract Email Table to Excel
