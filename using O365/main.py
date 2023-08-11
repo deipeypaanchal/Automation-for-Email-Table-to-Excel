@@ -1,6 +1,6 @@
 """
 
-This pragram was written by Deepey Panchal and Brandon Pyle
+This pragram was written by Deipey Paanchal and Brandon Pyle
 
 IMPORTANT INSTRUCTIONS:
 
