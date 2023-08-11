@@ -7,10 +7,14 @@ import win32com.client as win32
 import logging
 
 # Sender's email address
-SENDER_EMAIL = 'bdpyle@liberty.edu'
+SENDER_EMAIL = ''
 
 # Path to the master Excel workbook
-MASTER_WORKBOOK_PATH = 'book.xlsx'
+MASTER_WORKBOOK_PATH = ''
+
+# Name of the folder where your emails will be located
+EMAIL_FOLDER_NAME = ''
+
 
 class EquipmentEntry:
     def __init__(self, site, equipment, message, last_state_change):
@@ -96,7 +100,7 @@ def driver():
         # Connect to Outlook and process emails
         mail = win32.Dispatch("Outlook.Application").GetNamespace("MAPI")
         inbox = mail.GetDefaultFolder(6)  # 6 corresponds to the Inbox folder
-        subfolder = inbox.Folders("tables")  # Replace with the name of your subfolder (MUST BE A CHILD FOLDER OF INBOX)
+        subfolder = inbox.Folders(EMAIL_FOLDER_NAME)  # Replace with the name of your subfolder (MUST BE A CHILD FOLDER OF INBOX)
         print(f"Indexing emails in the {subfolder} folder")
 
         emails = subfolder.Items

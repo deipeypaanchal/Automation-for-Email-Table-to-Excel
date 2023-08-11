@@ -20,10 +20,10 @@ import pandas as pd
 import O365
 import logging
 
-CLIENT_ID = '12765d3d-4734-4dfa-9dae-068548bfd261' # Client ID from Azure Application
-CLIENT_SECRET = 'i_v8Q~YRj2uQZaH1.6ObOdscWAYhK5a-6Bz52bes' # Client Secret Value from Azure Application
-MASTER_WORKBOOK_PATH = 'book.xlsx' # Path to the master Excel workbook
-EMAIL_FOLDER_NAME = 'test' # Name of the folder where your emails will be located
+CLIENT_ID = '' # Client ID from Azure Application
+CLIENT_SECRET = '' # Client Secret Value from Azure Application
+MASTER_WORKBOOK_PATH = '' # Path to the master Excel workbook
+EMAIL_FOLDER_NAME = '' # Name of the folder where your emails will be located
 
 class EquipmentEntry:
     def __init__(self, site, equipment, message, last_state_change):
