@@ -2,4 +2,4 @@
 
 Authors: Deipey Paanchal and Brandon Pyle
 
-There are x versions of this project
+There are three total versions of this project which utilizes different libraries based on one's specific needs.
